@@ -1,0 +1,15 @@
+export const homeObjOne ={
+    lightBg:true,
+  imgStrart:'start',
+  lightTopLine:false,
+  lightText:false,
+  lightTextDesc:false,
+  headLine:'Text messaging',
+  description:'Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices, desktops/laptops, or other type of compatible computer',
+  buttonLabel:'Get Strarted',
+  topLine:'Text',
+  primary:false,
+  img:require('../../images/anh2.svg'),
+  alt:'Image',
+  start:'true',
+}
