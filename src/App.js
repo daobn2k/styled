@@ -1,19 +1,20 @@
-import Navbar from "./components/Navbar/Navbar";
-import GlobalStyle from "./globalStyles";
+import React from 'react'
 
 import {
   BrowserRouter as Router, Route, Switch,
 } from "react-router-dom";
-import Home from "./pages/HomePage/Home";
+import ProductList from './containers/ProductList';
+import ProductDetail from './containers/ProductDetail';
+import Header from './containers/Header';
 
 function App() {
   return (
    <Router>
-     <GlobalStyle />
-   <Navbar></Navbar>
+     <Header />
    <Switch>
-      <Route path="/" exact component ={Home} />
-      
+      <Route path="/" exact component ={ProductList} />
+      <Route path="/product/:productId" exact component={ProductDetail}  />
+      <Route>404 Not Found !</Route>
    </Switch>
    </Router>
   );

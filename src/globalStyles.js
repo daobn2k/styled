@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Button } from "antd";
+import 'antd/dist/antd.css';
 
 const GlobalStyle = createGlobalStyle`
 *{
